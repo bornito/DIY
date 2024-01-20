@@ -1,0 +1,92 @@
+1. The first letter in the SOLID principles is “S” for the single responsibility principle
+
+GetRepository
+
+repository - api controlleri pozivaju metode
+u konstruktoru dependency injection, action result zovemo metode iz repozitorija
+
+2. This principle is considered probably the most important of object-oriented design. 
+The open/closed principle states that your code (classes, modules, functions, etc.) 
+should be open for extension, but closed to modification.
+
+Jedan interface složeni koji se rastavlja na više manjih
+
+3. The definition means that child class objects should be able to replace parent 
+class objects without breaking the integrity of the application.
+Any code calling methods on objects of a specific type should continue to work 
+when those objects get replaced with instances of a subtype.
+
+Irepository - nasljeđuje iuserrepository - kad se logina i kad gađa u bazu, vraca je li true
+na user repository mozemo zamjeniti iuserrepo
+autenthicate user
+
+5. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Abstractions should not depend on details. Details should depend on abstractions.
+-> notifikacije
+
+Irepository nasljeđuje više, obrnuto ne
+
+1. Factory Pattern
+- Repository pattern - pristup podacima, centralizirana logika, reusable, održivo, sklalabilno
+- baratanje, pristup podacima
+
+2. Singleton
+- osigurava da instanca postoji, samo jedan će se pojaviti, 
+- db.content - problem ako je vise od 1 requesta, baca errore
+
+-> svi kontroleri zovu repository
+
+DoD, kalendar, masa klasa,
+
+Design Pattern -> Gang of Four -> Behavioral for algorithms and relationships with objects -> Iterator: Sequentially access the elements of a collection
+
+ispit -> u tehnologiji koju znamo
+
+
+Testovi - JUnit Testovi
+reverse enginering
+
+angular se vrti na portu 4200
+
+test folder
+u springu anotacije na bilo koju klasu treba staviti
+
+objekt na kojem se se radi perform
+
+coverage -> količina koda koju pokrivaju testovi -> DoD -> aplikacija mora biti tipa 70% pokrivena
+
+continuus integration -> na svaki commit, push idu testovi
+
+public int calculatedifference tets - 1 null, drugi null, oba null, prvi veci od drugog, drugi veci, oba ista
+
+3 ishoda
+- crtanje act i seq dijagrama
+- zadnji ishod 16 bodova i 40 min
+- solid prepoznaj koncept koji je i ispravi namjernu pogresku
+- ako ima naznake oba principa, napiši oba
+- design pattern 
+- dobijemo zadani informacijski sustav, opiši -> singelton za to, factory za to, decorator za to
+- Junit testovi
+// given, -> datecalculator.calculateDifference(null, null) -> u try blok, u catch illegalargumentexception ex, fail()
+ako prosao // komentar ok
+
+ako pozoves ovu metodu, uvijek vraćam te podatke -> mockanje
+
+stress testing -> rubni slučajevi
+
+baza podataka - service layer - repo layer - 
+
+ci/cd alati koji slušaju
+
+import static..
+
+
+
+
+
+static metoda u dateCalculator klasi
+
+
+
+
+
