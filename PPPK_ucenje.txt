@@ -1,0 +1,32 @@
+global.asax 
+-> je u uskoj vezi s App_Start-om
+-> na razini cijele aplikacije
+-> event kada se aplikacija starta
+
+filter config
+-> na globalnoj razini hendlamo neke errore
+-> tipa da sve presrećeš i da sve bude utf-8
+-> mrežica kroz koju prolaze svi requestovi i responsovi
+
+route config
+-> mapira kontroler/action/index
+-> ima default
+
+kontroler traži template -> index, about, contact
+
+naming convention -> convention over configuration
+
+shared -> dijele sve stranice
+
+layout -> izgled stranice
+
+bundle -> javascriptovi i css-ovi za dohvaćanje
+
+packages config -> paketi instalirani
+web config -> konfiguracija
+
+kad mjenjamo template -> klasa se ne mora restartati, klase da
+
+komunikacija s bazom preko model containera
+
+https://openclassrooms.com/en/courses/5671481-use-mvc-solid-principles-and-design-patterns-in-net
